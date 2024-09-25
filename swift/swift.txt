@@ -1,0 +1,70 @@
+Code: factorial of number
+func factorial(of number: Int) -> Int {
+    return number == 0 ? 1 : number * factorial(of: number - 1)
+}
+
+let num = 5
+print("Factorial of \(num) is \(factorial(of: num))")
+
+Output:
+ 
+2.
+Code: Leap Year
+func isLeapYear(year: Int) -> Bool {
+    if year % 400 == 0 {
+        return true
+    } else if year % 100 == 0 {
+        return false
+    } else if year % 4 == 0 {
+        return true
+    } else {
+        return false
+    }
+}
+
+let year = 2024
+if isLeapYear(year: year) {
+    print("\(year) is a leap year.")
+} else {
+    print("\(year) is not a leap year.")
+}
+
+Output:
+ 
+3.
+Code: calculateGrade with if else
+func calculateGrade(marks: Int) -> String {
+    if marks >= 90 {
+        return "A"
+    } else if marks >= 80 {
+        return "B"
+    } else if marks >= 70 {
+        return "C"
+    } else if marks >= 60 {
+        return "D"
+    } else {
+        return "F"
+    }
+}
+let marks = 85
+print("The grade is \(calculateGrade(marks: marks))")
+
+Output:
+ 
+4.
+Code: sum Of First Ten Even Numbers
+func sumOfFirstTenEvenNumbers() -> Int {
+    var sum = 0
+    for i in 1...10 {
+        sum += i * 2
+    }
+    return sum
+}
+
+print("Sum of the first 10 even numbers is \(sumOfFirstTenEvenNumbers())")
+
+Output:
+ 
+
+
+
